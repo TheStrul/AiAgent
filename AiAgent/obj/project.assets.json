@@ -1,0 +1,486 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "CSharpToJsonSchema/3.10.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "9.0.0"
+        },
+        "compile": {
+          "lib/net9.0/CSharpToJsonSchema.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/CSharpToJsonSchema.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Core/0.17.0": {
+        "type": "package",
+        "dependencies": {
+          "LangChain.Databases.Abstractions": "0.17.0",
+          "LangChain.DocumentLoaders.Abstractions": "0.17.0",
+          "LangChain.Polyfills": "0.17.0",
+          "LangChain.Providers.Abstractions": "0.17.0",
+          "LangChain.Splitters.Abstractions": "0.17.0"
+        },
+        "compile": {
+          "lib/net9.0/LangChain.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/LangChain.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Databases.Abstractions/0.17.0": {
+        "type": "package",
+        "dependencies": {
+          "LangChain.Polyfills": "0.16.0",
+          "LangChain.Providers.Abstractions": "0.17.0"
+        },
+        "compile": {
+          "lib/net9.0/LangChain.Databases.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/LangChain.Databases.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.DocumentLoaders.Abstractions/0.17.0": {
+        "type": "package",
+        "dependencies": {
+          "LangChain.Polyfills": "0.17.0",
+          "System.Memory.Data": "9.0.1",
+          "System.Text.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/net9.0/LangChain.DocumentLoaders.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/LangChain.DocumentLoaders.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Polyfills/0.17.0": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/LangChain.Polyfills.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/LangChain.Polyfills.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Providers.Abstractions/0.17.0": {
+        "type": "package",
+        "dependencies": {
+          "CSharpToJsonSchema": "3.10.1",
+          "System.Memory.Data": "9.0.1",
+          "System.Text.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/net9.0/LangChain.Providers.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/LangChain.Providers.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Splitters.Abstractions/0.17.0": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/LangChain.Splitters.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/LangChain.Splitters.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Memory.Data/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/System.Memory.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/System.Memory.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "System.Text.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CSharpToJsonSchema/3.10.1": {
+      "sha512": "d01LmVhNR2XRT5+XWrL8VKL4WKL7EGV9fSjCWRnnikgxq9y8vPj6XVxRPkcqCDruSlsB9mjdOeg5auIq9yjbig==",
+      "type": "package",
+      "path": "csharptojsonschema/3.10.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "analyzers/dotnet/CSharpToJsonSchema.Generators.dll",
+        "analyzers/dotnet/H.Generators.Extensions.dll",
+        "analyzers/dotnet/System.Collections.Immutable.dll",
+        "csharptojsonschema.3.10.1.nupkg.sha512",
+        "csharptojsonschema.nuspec",
+        "lib/net462/CSharpToJsonSchema.dll",
+        "lib/net462/CSharpToJsonSchema.xml",
+        "lib/net8.0/CSharpToJsonSchema.dll",
+        "lib/net8.0/CSharpToJsonSchema.xml",
+        "lib/net9.0/CSharpToJsonSchema.dll",
+        "lib/net9.0/CSharpToJsonSchema.xml",
+        "lib/netstandard2.0/CSharpToJsonSchema.dll",
+        "lib/netstandard2.0/CSharpToJsonSchema.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "LangChain.Core/0.17.0": {
+      "sha512": "rO/c/UhXqaPnYx76LPx86uiPsYoO/L6Rbvg5zW6wSnnpZf0uLw/9k1FwKUc+0ZqmRB2kG6ZzH7Y9sooAtSxF3Q==",
+      "type": "package",
+      "path": "langchain.core/0.17.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.core.0.17.0.nupkg.sha512",
+        "langchain.core.nuspec",
+        "lib/net462/LangChain.Core.dll",
+        "lib/net462/LangChain.Core.xml",
+        "lib/net8.0/LangChain.Core.dll",
+        "lib/net8.0/LangChain.Core.xml",
+        "lib/net9.0/LangChain.Core.dll",
+        "lib/net9.0/LangChain.Core.xml",
+        "lib/netstandard2.0/LangChain.Core.dll",
+        "lib/netstandard2.0/LangChain.Core.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "LangChain.Databases.Abstractions/0.17.0": {
+      "sha512": "FKscDla2JplsbNZvlHmHBwHLN6g+Q6iBAvbGbI/vRLhRXQIoHD3DMuO6CGIYuZI28ruYRsc5YdE8i5d3ayuYfw==",
+      "type": "package",
+      "path": "langchain.databases.abstractions/0.17.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.databases.abstractions.0.17.0.nupkg.sha512",
+        "langchain.databases.abstractions.nuspec",
+        "lib/net462/LangChain.Databases.Abstractions.dll",
+        "lib/net462/LangChain.Databases.Abstractions.xml",
+        "lib/net8.0/LangChain.Databases.Abstractions.dll",
+        "lib/net8.0/LangChain.Databases.Abstractions.xml",
+        "lib/net9.0/LangChain.Databases.Abstractions.dll",
+        "lib/net9.0/LangChain.Databases.Abstractions.xml",
+        "lib/netstandard2.0/LangChain.Databases.Abstractions.dll",
+        "lib/netstandard2.0/LangChain.Databases.Abstractions.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "LangChain.DocumentLoaders.Abstractions/0.17.0": {
+      "sha512": "fD02PMghutaHcWi43gaF9JN8n2Y52l9QWz4WMdnbkMngGB5Fi3xUxH7Vc64jpjV0koyFIoZOaf84ieLJSGKt5A==",
+      "type": "package",
+      "path": "langchain.documentloaders.abstractions/0.17.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.documentloaders.abstractions.0.17.0.nupkg.sha512",
+        "langchain.documentloaders.abstractions.nuspec",
+        "lib/net462/LangChain.DocumentLoaders.Abstractions.dll",
+        "lib/net462/LangChain.DocumentLoaders.Abstractions.xml",
+        "lib/net8.0/LangChain.DocumentLoaders.Abstractions.dll",
+        "lib/net8.0/LangChain.DocumentLoaders.Abstractions.xml",
+        "lib/net9.0/LangChain.DocumentLoaders.Abstractions.dll",
+        "lib/net9.0/LangChain.DocumentLoaders.Abstractions.xml",
+        "lib/netstandard2.0/LangChain.DocumentLoaders.Abstractions.dll",
+        "lib/netstandard2.0/LangChain.DocumentLoaders.Abstractions.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "LangChain.Polyfills/0.17.0": {
+      "sha512": "Zvz/SJOYJLO/tPBGMXImau855nr+0zVM4ulxYOkCCnR2iHBAi3Jsr0lynwlLyoo8iXkuzKOy4ODmGevK3V9o6A==",
+      "type": "package",
+      "path": "langchain.polyfills/0.17.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.polyfills.0.17.0.nupkg.sha512",
+        "langchain.polyfills.nuspec",
+        "lib/net462/LangChain.Polyfills.dll",
+        "lib/net462/LangChain.Polyfills.xml",
+        "lib/net8.0/LangChain.Polyfills.dll",
+        "lib/net8.0/LangChain.Polyfills.xml",
+        "lib/net9.0/LangChain.Polyfills.dll",
+        "lib/net9.0/LangChain.Polyfills.xml",
+        "lib/netstandard2.0/LangChain.Polyfills.dll",
+        "lib/netstandard2.0/LangChain.Polyfills.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "LangChain.Providers.Abstractions/0.17.0": {
+      "sha512": "o8hEicJT7+ixH/1PXsHgBeL9VS31OTFlsOhCdYOyfGVyLUd1coPdGfOeRgGJT/ZXPM/W7eSHIF8otpgzKyF5vw==",
+      "type": "package",
+      "path": "langchain.providers.abstractions/0.17.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.providers.abstractions.0.17.0.nupkg.sha512",
+        "langchain.providers.abstractions.nuspec",
+        "lib/net462/LangChain.Providers.Abstractions.dll",
+        "lib/net462/LangChain.Providers.Abstractions.xml",
+        "lib/net8.0/LangChain.Providers.Abstractions.dll",
+        "lib/net8.0/LangChain.Providers.Abstractions.xml",
+        "lib/net9.0/LangChain.Providers.Abstractions.dll",
+        "lib/net9.0/LangChain.Providers.Abstractions.xml",
+        "lib/netstandard2.0/LangChain.Providers.Abstractions.dll",
+        "lib/netstandard2.0/LangChain.Providers.Abstractions.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "LangChain.Splitters.Abstractions/0.17.0": {
+      "sha512": "pzF547c89/9xJPNS2S5dMWUA7enHy+51e2WMs3do9iObpzVkoCz0WoNjq2wnBpAPp5g8ySFo569nLgehZwRYqA==",
+      "type": "package",
+      "path": "langchain.splitters.abstractions/0.17.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.splitters.abstractions.0.17.0.nupkg.sha512",
+        "langchain.splitters.abstractions.nuspec",
+        "lib/net462/LangChain.Splitters.Abstractions.dll",
+        "lib/net462/LangChain.Splitters.Abstractions.xml",
+        "lib/net8.0/LangChain.Splitters.Abstractions.dll",
+        "lib/net8.0/LangChain.Splitters.Abstractions.xml",
+        "lib/net9.0/LangChain.Splitters.Abstractions.dll",
+        "lib/net9.0/LangChain.Splitters.Abstractions.xml",
+        "lib/netstandard2.0/LangChain.Splitters.Abstractions.dll",
+        "lib/netstandard2.0/LangChain.Splitters.Abstractions.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "System.Memory.Data/9.0.1": {
+      "sha512": "S5DSnXpiHQrhO2/hQgJzIA//ywVZ8AWkIZw7U7BCdTJifMZBO1tJM+dJwY0y2ztIVOGcbuGFn/vQ8GSTRg6LLg==",
+      "type": "package",
+      "path": "system.memory.data/9.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Memory.Data.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Memory.Data.targets",
+        "lib/net462/System.Memory.Data.dll",
+        "lib/net462/System.Memory.Data.xml",
+        "lib/net8.0/System.Memory.Data.dll",
+        "lib/net8.0/System.Memory.Data.xml",
+        "lib/net9.0/System.Memory.Data.dll",
+        "lib/net9.0/System.Memory.Data.xml",
+        "lib/netstandard2.0/System.Memory.Data.dll",
+        "lib/netstandard2.0/System.Memory.Data.xml",
+        "system.memory.data.9.0.1.nupkg.sha512",
+        "system.memory.data.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Text.Json/9.0.1": {
+      "sha512": "eqWHDZqYPv1PvuvoIIx5pF74plL3iEOZOl/0kQP+Y0TEbtgNnM2W6k8h8EPYs+LTJZsXuWa92n5W5sHTWvE3VA==",
+      "type": "package",
+      "path": "system.text.json/9.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/roslyn3.11/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn3.11/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn4.0/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn4.4/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "buildTransitive/net461/System.Text.Json.targets",
+        "buildTransitive/net462/System.Text.Json.targets",
+        "buildTransitive/net8.0/System.Text.Json.targets",
+        "buildTransitive/netcoreapp2.0/System.Text.Json.targets",
+        "buildTransitive/netstandard2.0/System.Text.Json.targets",
+        "lib/net462/System.Text.Json.dll",
+        "lib/net462/System.Text.Json.xml",
+        "lib/net8.0/System.Text.Json.dll",
+        "lib/net8.0/System.Text.Json.xml",
+        "lib/net9.0/System.Text.Json.dll",
+        "lib/net9.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.9.0.1.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "LangChain.Core >= 0.17.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\avist\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\avist\\source\\repos\\GitHubLocal\\Customers\\Ai\\AiAgent\\AiAgent.csproj",
+      "projectName": "AiAgent",
+      "projectPath": "C:\\Users\\avist\\source\\repos\\GitHubLocal\\Customers\\Ai\\AiAgent\\AiAgent.csproj",
+      "packagesPath": "C:\\Users\\avist\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\avist\\source\\repos\\GitHubLocal\\Customers\\Ai\\AiAgent\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\avist\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "LangChain.Core": {
+            "target": "Package",
+            "version": "[0.17.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "FzNMVvO/EWw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\avist\\source\\repos\\GitHubLocal\\Customers\\Ai\\AiAgent\\AiAgent.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\avist\\.nuget\\packages\\csharptojsonschema\\3.10.1\\csharptojsonschema.3.10.1.nupkg.sha512",
+    "C:\\Users\\avist\\.nuget\\packages\\langchain.core\\0.17.0\\langchain.core.0.17.0.nupkg.sha512",
+    "C:\\Users\\avist\\.nuget\\packages\\langchain.databases.abstractions\\0.17.0\\langchain.databases.abstractions.0.17.0.nupkg.sha512",
+    "C:\\Users\\avist\\.nuget\\packages\\langchain.documentloaders.abstractions\\0.17.0\\langchain.documentloaders.abstractions.0.17.0.nupkg.sha512",
+    "C:\\Users\\avist\\.nuget\\packages\\langchain.polyfills\\0.17.0\\langchain.polyfills.0.17.0.nupkg.sha512",
+    "C:\\Users\\avist\\.nuget\\packages\\langchain.providers.abstractions\\0.17.0\\langchain.providers.abstractions.0.17.0.nupkg.sha512",
+    "C:\\Users\\avist\\.nuget\\packages\\langchain.splitters.abstractions\\0.17.0\\langchain.splitters.abstractions.0.17.0.nupkg.sha512",
+    "C:\\Users\\avist\\.nuget\\packages\\system.memory.data\\9.0.1\\system.memory.data.9.0.1.nupkg.sha512",
+    "C:\\Users\\avist\\.nuget\\packages\\system.text.json\\9.0.1\\system.text.json.9.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
