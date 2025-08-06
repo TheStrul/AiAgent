@@ -51,7 +51,15 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "LangChain.Chains.StackableChains": {
+              "target": "Package",
+              "version": "[0.17.0, )"
+            },
             "LangChain.Core": {
+              "target": "Package",
+              "version": "[0.17.0, )"
+            },
+            "LangChain.Providers.OpenAI": {
               "target": "Package",
               "version": "[0.17.0, )"
             }

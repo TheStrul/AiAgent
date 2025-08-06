@@ -104,6 +104,24 @@
           }
         }
       },
+      "LangChain.Providers.OpenAI/0.17.0": {
+        "type": "package",
+        "dependencies": {
+          "LangChain.Polyfills": "0.16.0",
+          "LangChain.Providers.Abstractions": "0.17.0",
+          "tryAGI.OpenAI": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0/LangChain.Providers.OpenAI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/LangChain.Providers.OpenAI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "LangChain.Splitters.Abstractions/0.17.0": {
         "type": "package",
         "compile": {
@@ -147,6 +165,103 @@
         },
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "Tiktoken/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Tiktoken.Core": "2.2.0",
+          "Tiktoken.Encodings.cl100k": "2.2.0",
+          "Tiktoken.Encodings.o200k": "2.2.0"
+        },
+        "compile": {
+          "lib/net9.0/Tiktoken.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Tiktoken.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Tiktoken.Core/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Tiktoken.Encodings.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "lib/net9.0/Tiktoken.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Tiktoken.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Tiktoken.Encodings.Abstractions/2.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Tiktoken.Encodings.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Tiktoken.Encodings.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Tiktoken.Encodings.cl100k/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Tiktoken.Encodings.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "lib/net9.0/Tiktoken.Encodings.cl100k.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Tiktoken.Encodings.cl100k.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Tiktoken.Encodings.o200k/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Tiktoken.Encodings.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "lib/net9.0/Tiktoken.Encodings.o200k.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Tiktoken.Encodings.o200k.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "tryAGI.OpenAI/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "CSharpToJsonSchema": "3.10.1",
+          "System.Text.Json": "9.0.1",
+          "Tiktoken": "2.2.0"
+        },
+        "compile": {
+          "lib/net9.0/tryAGI.OpenAI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/tryAGI.OpenAI.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
@@ -281,6 +396,27 @@
         "nuget_icon.png"
       ]
     },
+    "LangChain.Providers.OpenAI/0.17.0": {
+      "sha512": "CV3K/ADf1U7iW/rkwhO1H7mVHmQSDTtUkgciYvFm3EUKOeRe++//o5ry1tLp3cZI8ME7Kb2cb2BCq5KhsDRh8w==",
+      "type": "package",
+      "path": "langchain.providers.openai/0.17.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.providers.openai.0.17.0.nupkg.sha512",
+        "langchain.providers.openai.nuspec",
+        "lib/net462/LangChain.Providers.OpenAI.dll",
+        "lib/net462/LangChain.Providers.OpenAI.xml",
+        "lib/net8.0/LangChain.Providers.OpenAI.dll",
+        "lib/net8.0/LangChain.Providers.OpenAI.xml",
+        "lib/net9.0/LangChain.Providers.OpenAI.dll",
+        "lib/net9.0/LangChain.Providers.OpenAI.xml",
+        "lib/netstandard2.0/LangChain.Providers.OpenAI.dll",
+        "lib/netstandard2.0/LangChain.Providers.OpenAI.xml",
+        "nuget_icon.png"
+      ]
+    },
     "LangChain.Splitters.Abstractions/0.17.0": {
       "sha512": "pzF547c89/9xJPNS2S5dMWUA7enHy+51e2WMs3do9iObpzVkoCz0WoNjq2wnBpAPp5g8ySFo569nLgehZwRYqA==",
       "type": "package",
@@ -400,11 +536,149 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Tiktoken/2.2.0": {
+      "sha512": "zOwPjC2CHlN56cdwsMDaCehUXZ0K8cflVZaiXNvyTbyrKTeBVtpioaHRL8PsndruKfwG9vkbOdbz7MHI/DNyag==",
+      "type": "package",
+      "path": "tiktoken/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/Tiktoken.dll",
+        "lib/net462/Tiktoken.xml",
+        "lib/net8.0/Tiktoken.dll",
+        "lib/net8.0/Tiktoken.xml",
+        "lib/net9.0/Tiktoken.dll",
+        "lib/net9.0/Tiktoken.xml",
+        "lib/netstandard2.0/Tiktoken.dll",
+        "lib/netstandard2.0/Tiktoken.xml",
+        "lib/netstandard2.1/Tiktoken.dll",
+        "lib/netstandard2.1/Tiktoken.xml",
+        "nuget_icon.png",
+        "tiktoken.2.2.0.nupkg.sha512",
+        "tiktoken.nuspec"
+      ]
+    },
+    "Tiktoken.Core/2.2.0": {
+      "sha512": "VUAPJElUMGTtAmVD63IVmHAZ4D3Ac5HzfVORQXF+XuPJ1PCrlt/T9l9xPghdPT+3jL7iDgYMvaTug/Uhe146OA==",
+      "type": "package",
+      "path": "tiktoken.core/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/Tiktoken.Core.dll",
+        "lib/net462/Tiktoken.Core.xml",
+        "lib/net8.0/Tiktoken.Core.dll",
+        "lib/net8.0/Tiktoken.Core.xml",
+        "lib/net9.0/Tiktoken.Core.dll",
+        "lib/net9.0/Tiktoken.Core.xml",
+        "lib/netstandard2.0/Tiktoken.Core.dll",
+        "lib/netstandard2.0/Tiktoken.Core.xml",
+        "lib/netstandard2.1/Tiktoken.Core.dll",
+        "lib/netstandard2.1/Tiktoken.Core.xml",
+        "nuget_icon.png",
+        "tiktoken.core.2.2.0.nupkg.sha512",
+        "tiktoken.core.nuspec"
+      ]
+    },
+    "Tiktoken.Encodings.Abstractions/2.2.0": {
+      "sha512": "UTZNDsdhrAa0C3c4xasumGAxQWsrCsZ0zCA9DcoD8pQ28FO7iQeLJ6cPQXt+AiWzl+ZoTOk4YJ6wZAyOME7YnQ==",
+      "type": "package",
+      "path": "tiktoken.encodings.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/Tiktoken.Encodings.Abstractions.dll",
+        "lib/net462/Tiktoken.Encodings.Abstractions.xml",
+        "lib/net8.0/Tiktoken.Encodings.Abstractions.dll",
+        "lib/net8.0/Tiktoken.Encodings.Abstractions.xml",
+        "lib/net9.0/Tiktoken.Encodings.Abstractions.dll",
+        "lib/net9.0/Tiktoken.Encodings.Abstractions.xml",
+        "lib/netstandard2.0/Tiktoken.Encodings.Abstractions.dll",
+        "lib/netstandard2.0/Tiktoken.Encodings.Abstractions.xml",
+        "lib/netstandard2.1/Tiktoken.Encodings.Abstractions.dll",
+        "lib/netstandard2.1/Tiktoken.Encodings.Abstractions.xml",
+        "nuget_icon.png",
+        "tiktoken.encodings.abstractions.2.2.0.nupkg.sha512",
+        "tiktoken.encodings.abstractions.nuspec"
+      ]
+    },
+    "Tiktoken.Encodings.cl100k/2.2.0": {
+      "sha512": "poFklFoMZQ6BKTbYos2OV0UAafuWJVOxuXShrFSRFhaZNzxdU7Q63KaAmSRXXXhryVfc+gguQIA/LrbgWJl63w==",
+      "type": "package",
+      "path": "tiktoken.encodings.cl100k/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/Tiktoken.Encodings.cl100k.dll",
+        "lib/net462/Tiktoken.Encodings.cl100k.xml",
+        "lib/net8.0/Tiktoken.Encodings.cl100k.dll",
+        "lib/net8.0/Tiktoken.Encodings.cl100k.xml",
+        "lib/net9.0/Tiktoken.Encodings.cl100k.dll",
+        "lib/net9.0/Tiktoken.Encodings.cl100k.xml",
+        "lib/netstandard2.0/Tiktoken.Encodings.cl100k.dll",
+        "lib/netstandard2.0/Tiktoken.Encodings.cl100k.xml",
+        "lib/netstandard2.1/Tiktoken.Encodings.cl100k.dll",
+        "lib/netstandard2.1/Tiktoken.Encodings.cl100k.xml",
+        "nuget_icon.png",
+        "tiktoken.encodings.cl100k.2.2.0.nupkg.sha512",
+        "tiktoken.encodings.cl100k.nuspec"
+      ]
+    },
+    "Tiktoken.Encodings.o200k/2.2.0": {
+      "sha512": "zcCxX5KIyCEGYOkoEr3hGpBaNQ5BxZdERCDVa2Pl21jJPaiaKAfopK1b11DZoLY4hWUt9v0hUKJ7An5LYU5t9Q==",
+      "type": "package",
+      "path": "tiktoken.encodings.o200k/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/Tiktoken.Encodings.o200k.dll",
+        "lib/net462/Tiktoken.Encodings.o200k.xml",
+        "lib/net8.0/Tiktoken.Encodings.o200k.dll",
+        "lib/net8.0/Tiktoken.Encodings.o200k.xml",
+        "lib/net9.0/Tiktoken.Encodings.o200k.dll",
+        "lib/net9.0/Tiktoken.Encodings.o200k.xml",
+        "lib/netstandard2.0/Tiktoken.Encodings.o200k.dll",
+        "lib/netstandard2.0/Tiktoken.Encodings.o200k.xml",
+        "lib/netstandard2.1/Tiktoken.Encodings.o200k.dll",
+        "lib/netstandard2.1/Tiktoken.Encodings.o200k.xml",
+        "nuget_icon.png",
+        "tiktoken.encodings.o200k.2.2.0.nupkg.sha512",
+        "tiktoken.encodings.o200k.nuspec"
+      ]
+    },
+    "tryAGI.OpenAI/4.0.0": {
+      "sha512": "JM0kTroMT5g+F3g/Uj4ECktM/vWg8cP6o5Q7Y4oDlpMffckXnQ1QtQBDG752x0KvET0O+xwAFiszDdogasWykQ==",
+      "type": "package",
+      "path": "tryagi.openai/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/tryAGI.OpenAI.dll",
+        "lib/net462/tryAGI.OpenAI.xml",
+        "lib/net8.0/tryAGI.OpenAI.dll",
+        "lib/net8.0/tryAGI.OpenAI.xml",
+        "lib/net9.0/tryAGI.OpenAI.dll",
+        "lib/net9.0/tryAGI.OpenAI.xml",
+        "lib/netstandard2.0/tryAGI.OpenAI.dll",
+        "lib/netstandard2.0/tryAGI.OpenAI.xml",
+        "nuget_icon.png",
+        "tryagi.openai.4.0.0.nupkg.sha512",
+        "tryagi.openai.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "LangChain.Core >= 0.17.0"
+      "LangChain.Chains.StackableChains >= 0.17.0",
+      "LangChain.Core >= 0.17.0",
+      "LangChain.Providers.OpenAI >= 0.17.0"
     ]
   },
   "packageFolders": {
@@ -458,7 +732,15 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
+          "LangChain.Chains.StackableChains": {
+            "target": "Package",
+            "version": "[0.17.0, )"
+          },
           "LangChain.Core": {
+            "target": "Package",
+            "version": "[0.17.0, )"
+          },
+          "LangChain.Providers.OpenAI": {
             "target": "Package",
             "version": "[0.17.0, )"
           }
@@ -482,5 +764,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package LangChain.Chains.StackableChains. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org",
+      "libraryId": "LangChain.Chains.StackableChains",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }

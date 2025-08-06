@@ -8,6 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="LangChain.Core" Version="0.17.0" />
+    <PackageReference Include="LangChain.Providers.OpenAI" Version="0.17.0" />
+    <PackageReference Include="LangChain.Chains.StackableChains" Version="0.17.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Tools\" />
   </ItemGroup>
 
 </Project>
