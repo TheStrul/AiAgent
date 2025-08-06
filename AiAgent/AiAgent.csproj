@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -9,7 +9,6 @@
   <ItemGroup>
     <PackageReference Include="LangChain.Core" Version="0.17.0" />
     <PackageReference Include="LangChain.Providers.OpenAI" Version="0.17.0" />
-    <PackageReference Include="LangChain.Chains.StackableChains" Version="0.17.0" />
   </ItemGroup>
 
   <ItemGroup>

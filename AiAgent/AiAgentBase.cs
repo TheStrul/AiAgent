@@ -1,28 +1,37 @@
-﻿namespace AiAgent
+namespace AiAgent
 {
-    using LangChain.Chains.StackableChains.Agents.Tools;
+    using AiAgent.Tools;
     using LangChain.Providers;
     using LangChain.Schema;
 
-    public class CustomTool
+    internal sealed class DelegateTool : IAiTool
     {
-        public string Name { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
-        public Func<string, Task<string>> Function { get; set; } = _ => Task.FromResult("No function defined");
+        private readonly Func<string, Task<string>> func;
+
+        public DelegateTool(string name, string description, Func<string, Task<string>> func)
+        {
+            Name = name;
+            Description = description;
+            this.func = func;
+        }
+
+        public string Name { get; }
+        public string Description { get; }
+        public Task<string> ExecuteAsync(string input) => func(input);
     }
 
     public class AiAgentBase
     {
-        private readonly Dictionary<string, CustomTool> tools = new Dictionary<string, CustomTool>();
-        private readonly List<Message> conversationHistory = new List<Message>();
+        private readonly Dictionary<string, IAiTool> tools = new();
+        private readonly List<Message> conversationHistory = new();
         private IChatModel? chatModel;
 
         public string Name { get; set; }
         public string Description { get; set; }
         public string Version { get; set; }
         public string Author { get; set; }
-        
-        public IReadOnlyDictionary<string, CustomTool> Tools => tools;
+
+        public IReadOnlyDictionary<string, IAiTool> Tools => tools;
         public IReadOnlyList<Message> ConversationHistory => conversationHistory;
 
         public AiAgentBase(string name, string description, string version, string author)
@@ -50,31 +59,17 @@
             // Override in derived classes to add specific tools
         }
 
-        public void AddTool(string name, CustomTool tool)
-        {
-            tools[name] = tool;
-        }
+        public void AddTool(IAiTool tool) => tools[tool.Name] = tool;
 
         public void AddTool(string name, string description, Func<string, Task<string>> function)
         {
-            var tool = new CustomTool
-            {
-                Name = name,
-                Description = description,
-                Function = function
-            };
-            AddTool(name, tool);
+            var tool = new DelegateTool(name, description, function);
+            AddTool(tool);
         }
 
-        public bool RemoveTool(string name)
-        {
-            return tools.Remove(name);
-        }
+        public bool RemoveTool(string name) => tools.Remove(name);
 
-        public CustomTool? GetTool(string name)
-        {
-            return tools.TryGetValue(name, out var tool) ? tool : null;
-        }
+        public IAiTool? GetTool(string name) => tools.TryGetValue(name, out var tool) ? tool : null;
 
         public async Task<string> ChatAsync(string userMessage)
         {
@@ -101,7 +96,7 @@
                 // Generate response using the chat model
                 var response = await chatModel.GenerateAsync(conversationHistory.ToArray());
                 var lastMessage = response.Messages.LastOrDefault();
-                var responseMessage = lastMessage?.Content ?? "No response generated.";
+                var responseMessage = lastMessage.Content ?? "No response generated.";
 
                 // Add AI response to conversation history
                 var aiMsg = Message.Ai(responseMessage);
@@ -127,7 +122,7 @@
                 {
                     try
                     {
-                        var result = await tool.Function(userMessage);
+                        var result = await tool.ExecuteAsync(userMessage);
                         return $"Tool '{tool.Name}' executed: {result}";
                     }
                     catch (Exception ex)
@@ -139,7 +134,7 @@
             return null;
         }
 
-        protected virtual bool ShouldUseTool(string userMessage, CustomTool tool)
+        protected virtual bool ShouldUseTool(string userMessage, IAiTool tool)
         {
             // Simple keyword-based tool detection
             // Override for more sophisticated tool selection logic
@@ -160,8 +155,8 @@
             foreach (var message in conversationHistory.TakeLast(5)) // Show last 5 messages
             {
                 var role = message.Role == MessageRole.Human ? "User" : "AI";
-                var content = message.Content.Length > 100 
-                    ? message.Content.Substring(0, 97) + "..." 
+                var content = message.Content.Length > 100
+                    ? message.Content.Substring(0, 97) + "..."
                     : message.Content;
                 summary += $"{role}: {content}\n";
             }
@@ -190,3 +185,4 @@
         }
     }
 }
+
