@@ -71,6 +71,37 @@ var response = await assistant.ChatAsync("calculator: 2+2");
 Console.WriteLine(response);
 ```
 
+### Using the GitHub Repository Creation Tool
+
+The `CreateRepositoryTool` allows you to create GitHub repositories programmatically:
+
+```csharp
+using AiAgent;
+using AiAgent.Tools;
+
+// Create the assistant and register the repository creation tool
+var assistant = new ChatAssistant();
+var repoTool = new CreateRepositoryTool("your-github-token", "your-username");
+assistant.RegisterTool(repoTool);
+assistant.Init("your-openai-api-key");
+
+// Create a private repository
+var response = await assistant.ChatAsync(
+    "create_repository: name:my-new-repo,description:A test repository,private:true"
+);
+Console.WriteLine(response);
+```
+
+**Input Format:**
+- `name:<repository-name>` (required) - The name of the repository to create
+- `description:<description>` (optional) - Repository description
+- `private:<true|false>` (optional, defaults to true) - Whether the repository should be private
+- `owner:<username-or-org>` (optional) - Owner for the repository (uses authenticated user if not specified)
+
+**Requirements:**
+- A GitHub personal access token with `repo` scope (for creating repositories)
+- The token must have appropriate permissions for the target owner/organization
+
 ## Project Structure
 
 ```
@@ -79,7 +110,8 @@ AiAgent/
 ├── ChatAssistant.cs      # High-level assistant wrapper
 ├── AiAgentBase.cs        # Core agent implementation
 ├── Tools/
-│   └── IAiTool.cs       # Tool interface for user-defined extensions
+│   ├── IAiTool.cs       # Tool interface for user-defined extensions
+│   └── CreateRepositoryTool.cs  # GitHub repository creation tool
 ├── README.md            # This file
 ├── LICENSE              # License information
 └── .gitignore          # Git ignore rules
@@ -112,6 +144,7 @@ The main base class for creating AI agents.
 
  - [LangChain.Core](https://www.nuget.org/packages/LangChain.Core/) - Core LangChain functionality
  - [LangChain.Providers.OpenAI](https://www.nuget.org/packages/LangChain.Providers.OpenAI/) - OpenAI provider
+ - [Octokit](https://www.nuget.org/packages/Octokit/) - GitHub API client (for CreateRepositoryTool)
 
 ## Contributing
 

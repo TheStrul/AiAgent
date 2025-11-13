@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="LangChain.Core" Version="0.17.0" />
     <PackageReference Include="LangChain.Providers.OpenAI" Version="0.17.0" />
+    <PackageReference Include="Octokit" Version="14.0.0" />
   </ItemGroup>
 
   <ItemGroup>
