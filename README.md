@@ -36,6 +36,13 @@ dotnet restore
 dotnet build
 ```
 
+4. (Optional) Run the examples:
+```bash
+cd Examples
+dotnet run
+```
+See the [Examples README](Examples/README.md) for more details on running the example applications.
+
 ## Usage
 
 ### Quick Start
@@ -106,15 +113,19 @@ Console.WriteLine(response);
 
 ```
 AiAgent/
-├── AiAgent.csproj        # Project file with dependencies
-├── ChatAssistant.cs      # High-level assistant wrapper
-├── AiAgentBase.cs        # Core agent implementation
-├── Tools/
-│   ├── IAiTool.cs       # Tool interface for user-defined extensions
-│   └── CreateRepositoryTool.cs  # GitHub repository creation tool
-├── README.md            # This file
-├── LICENSE              # License information
-└── .gitignore          # Git ignore rules
+├── AiAgent/                     # Main library project
+│   ├── AiAgent.csproj           # Project file with dependencies
+│   ├── ChatAssistant.cs         # High-level assistant wrapper
+│   ├── AiAgentBase.cs           # Core agent implementation
+│   └── Tools/
+│       ├── IAiTool.cs          # Tool interface for user-defined extensions
+│       └── CreateRepositoryTool.cs  # GitHub repository creation tool
+├── Examples/                    # Example applications
+│   ├── Program.cs               # Example code
+│   └── README.md                # Examples documentation
+├── README.md                    # This file
+├── LICENSE                      # License information
+└── .gitignore                   # Git ignore rules
 ```
 
 ## API Reference
